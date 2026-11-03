@@ -1,0 +1,11 @@
+.collection-album-create { margin:12px 0; }
+.collection-album-create button,.album-config-actions button { border:1px solid #ff6871;background:#d93645;color:white;padding:10px 18px;border-radius:8px;cursor:pointer;font:inherit; }
+.album-config-dialog { position:fixed;inset:0;margin:auto;width:min(480px,92vw);max-height:90dvh;overflow:auto;background:#101820;color:#edf3fa;border:1px solid #45515e;border-radius:16px;padding:24px; }
+.album-config-dialog::backdrop { background:#000a;backdrop-filter:blur(5px); }
+.album-config-dialog h2 { margin:0 0 20px; }
+.album-config-dialog label { display:grid;gap:8px;margin-bottom:16px; }
+.album-config-dialog input,.album-config-dialog select { width:100%;min-width:0;background:#18232c;color:#fff;border:1px solid #52616c;border-radius:7px;padding:10px;font:inherit; }
+.album-config-dimensions { display:grid;grid-template-columns:1fr 1fr;gap:16px; }
+.album-config-actions { display:flex;gap:12px;margin-top:20px;flex-wrap:wrap; }
+.album-config-dialog p { font-size:13px;line-height:1.5;margin:10px 0;color:#b9c9d5; }
+#albumConfigError { color:#ff9098; }

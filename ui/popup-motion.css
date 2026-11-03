@@ -1,0 +1,36 @@
+/* Shared entrance motion. Card inspection keeps its origin-to-centre flight. */
+@keyframes chiniPopupEnter {
+ from { opacity:0;translate:0 16px;scale:.96; }
+ to { opacity:1;translate:0 0;scale:1; }
+}
+@keyframes chiniPopupBackdrop { from { opacity:0; } to { opacity:1; } }
+html body dialog[open]:not(.card-inspector),
+html body .card-modal.show > .card-modal-inner,
+html body .user-gate-overlay.show > .user-gate-dialog,
+html body .pokedex-variants-overlay.show > .pokedex-variants-dialog,
+html body .scanner-overlay.show > .scanner-dialog,
+html body .pack-overlay.show > .pack-overlay-header {
+ animation:chiniPopupEnter 240ms cubic-bezier(.2,.8,.2,1) both;
+}
+html body dialog[open]:not(.card-inspector)::backdrop,
+html body .card-modal.show,
+html body .user-gate-overlay.show,
+html body .pokedex-variants-overlay.show,
+html body .scanner-overlay.show,
+html body .pack-overlay.show {
+ animation:chiniPopupBackdrop 200ms ease-out both;
+}
+@media(prefers-reduced-motion:reduce) {
+ html body dialog[open]:not(.card-inspector),
+ html body dialog[open]:not(.card-inspector)::backdrop,
+ html body .card-modal.show,
+ html body .card-modal.show > .card-modal-inner,
+ html body .user-gate-overlay.show,
+ html body .user-gate-overlay.show > .user-gate-dialog,
+ html body .pokedex-variants-overlay.show,
+ html body .pokedex-variants-overlay.show > .pokedex-variants-dialog,
+ html body .scanner-overlay.show,
+ html body .scanner-overlay.show > .scanner-dialog,
+ html body .pack-overlay.show,
+ html body .pack-overlay.show > .pack-overlay-header { animation:none; }
+}

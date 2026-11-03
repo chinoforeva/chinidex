@@ -1,0 +1,63 @@
+html[data-ui="modern"] {
+ --sidebar-w:224px;
+ --text-muted:#a5b1be;
+ --accent:#ff5157;
+ body {font-size:15px;line-height:1.55;}
+ ::selection {background:#ff5157;color:#080e12;}
+ input,textarea {caret-color:var(--accent);}
+ button,a,input,select,summary {touch-action:manipulation;}
+ button,input,select {min-height:44px;}
+ :focus-visible {outline:2px solid #ff8589;outline-offset:3px;}
+ .m-nav>button {font-size:14px;min-height:48px;}
+ .m-subnav {margin:20px 0 0;padding:16px 0 0;border-top:1px solid var(--border);}
+ .m-subnav button {font-size:13px;min-height:42px;}
+ .m-page-head {margin-bottom:28px;}
+ .m-page-head h1 {font-size:clamp(28px,3vw,42px);letter-spacing:-.025em;}
+ .workspace-panel {padding:0;border:0;background:transparent;}
+ .workspace-panel>h2 {display:none;}
+ .workspace-filters {gap:16px;}
+ details.chini-filters {margin:16px 0 24px;border-block:1px solid var(--border);padding:12px 0;}
+ details.chini-filters>summary {cursor:pointer;min-height:44px;display:flex;align-items:center;font-weight:600;}
+ details.chini-filters[open]>summary {margin-bottom:12px;}
+ .workspace-actions {gap:8px;margin:16px 0;}
+ .workspace-table-wrap table {font-variant-numeric:tabular-nums;}
+ .workspace-table-wrap td {padding:16px 12px;}
+ .workspace-table-wrap small {color:var(--text-secondary);font-size:12px;}
+ .chini-dashboard {display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,1fr);gap:32px;}
+ .chini-dashboard h2 {font-size:22px;margin:0 0 16px;}
+ .chini-dashboard section {border-top:1px solid var(--border);padding-top:24px;}
+ .chini-dashboard .m-recent {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;}
+ .chini-dashboard .m-recent img {max-width:100%;height:160px;object-fit:contain;}
+ .chini-overview {display:flex;flex-wrap:wrap;gap:12px 28px;margin:0 0 32px;color:var(--text-secondary);}
+ .chini-overview strong {color:var(--text-primary);}
+ .chini-quick {display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px;}
+ .m-bottom-nav {display:none;}
+ .server-setup {max-width:460px;width:calc(100% - 32px);background:var(--surface);color:var(--text-primary);border:1px solid var(--border);border-radius:16px;padding:28px;}
+ .server-setup form,.server-setup label {display:grid;gap:16px;}
+ .server-setup::backdrop {background:#080e12e8;}
+ scrollbar-color:var(--border-light) var(--bg-primary);
+ @media(max-width:850px){
+  --sidebar-w:0px;
+  main {margin-left:0;padding-inline:16px;}
+  body>header {left:0;}
+  .m-sidebar {width:260px;}
+  body {font-size:14px;padding-bottom:calc(76px + env(safe-area-inset-bottom));}
+  .m-sidebar-bottom {display:none;}
+  .m-bottom-nav {position:fixed;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));bottom:0;left:0;right:0;z-index:780;background:#0c1217;border-top:1px solid var(--border);padding:4px 4px calc(4px + env(safe-area-inset-bottom));}
+  .m-bottom-nav button {display:flex;flex-direction:column;gap:3px;align-items:center;justify-content:center;color:var(--text-secondary);font-size:10px;min-width:0;min-height:60px;border:0;background:none;padding:4px;}
+  .m-bottom-nav button.active {color:var(--accent);}
+  .m-bottom-nav svg {width:22px;height:22px;}
+  .chini-dashboard {grid-template-columns:1fr;gap:28px;}
+  .chini-dashboard .m-recent {grid-template-columns:repeat(2,minmax(0,1fr));}
+  .workspace-filters {grid-template-columns:repeat(2,minmax(0,1fr));}
+  .workspace-actions button {flex:1 1 145px;}
+  .workspace-table-wrap table,.workspace-table-wrap tbody {display:block;width:100%;min-width:0;}
+  .workspace-table-wrap thead,.workspace-table-wrap caption {position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);}
+  .workspace-table-wrap tr {display:grid;grid-template-columns:36px minmax(0,1fr);gap:8px;border-bottom:1px solid var(--border);padding:16px 0;}
+  .workspace-table-wrap td {display:block;padding:0;border:0;white-space:normal;}
+  .workspace-table-wrap td:nth-child(n+3) {grid-column:2;}
+  .workspace-table-wrap td:nth-child(3)::before {content:'Cantidad: ';color:var(--text-secondary);}
+  .workspace-table-wrap td:nth-child(4)::before {content:'Precio: ';color:var(--text-secondary);}
+ }
+ @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto;transition:none;animation:none;}}
+}

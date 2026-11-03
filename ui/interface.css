@@ -1,0 +1,6 @@
+@layer chinidex-modern-priority, chinidex-classic;
+.interface-switch { display:flex; align-items:center; gap:5px; color:#aeb7c4; flex-shrink:0; }
+.interface-switch svg { width:17px; height:17px; }
+.interface-switch select { color:inherit; background:#10151b; border:1px solid #30363e; border-radius:6px; padding:7px 4px; font:11px Inter,system-ui,sans-serif; cursor:pointer; max-width:120px; }
+html[data-ui="classic"] .interface-switch { position:fixed; right:175px; top:20px; z-index:1100; }
+@media(max-width:700px) { html[data-ui="classic"] .interface-switch { right:8px; top:5px; } .interface-switch select { max-width:103px; font-size:10px; } }

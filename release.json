@@ -1,0 +1,290 @@
+{
+  "version": "3.0.0",
+  "createdAt": "2026-11-03T00:30:24.747Z",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "catalogue-loader.js",
+      "sha256": "86efd4bba3e890bf10a8372abcdafa17e4a8f3fc857755978903cd865371c2dc"
+    },
+    {
+      "path": "index.html",
+      "sha256": "66cd2dc7a32695b17ad357df291a63489dac716a654f2dee4ca5a8f28830437b"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "sha256": "00eb5fe4db7134b93131d7d833357f77ed8590ca9fd64d73ed1b1f92cf4f8c5f"
+    },
+    {
+      "path": "mobile-assets/icon-192.png",
+      "sha256": "83c805f8ab22972b5881c098a25b1f9becab73abea236cbece105f068175cc47"
+    },
+    {
+      "path": "mobile-assets/icon-512.png",
+      "sha256": "60cf41349125be55119d1d676f65202b13d11e52516dead7d5cd7e2aa542de3c"
+    },
+    {
+      "path": "pokedex-album.js",
+      "sha256": "4eaf9ba2b86d4ae9fbc2c10c14a94bf5f110625d4237454a939ddecae1801fe2"
+    },
+    {
+      "path": "README.md",
+      "sha256": "a054d20098701b7f2a75b07db11edc03315135c227c93aa34639dcad6db3eb1f"
+    },
+    {
+      "path": "scanner-camera.js",
+      "sha256": "b1096c021852992bbc2c4204523f3501fd2c377dcd09c40c18881e4e647047ea"
+    },
+    {
+      "path": "sw.js",
+      "sha256": "fca90f1db0d2ef7246f7ae17708fc4d93f83184a4db6f4478fd715ac1cdd7b29"
+    },
+    {
+      "path": "ui/access.js",
+      "sha256": "bb5b1c92f4219bff23693f266468e01c0317441636bb35e00bcab41a3bfdfa2b"
+    },
+    {
+      "path": "ui/account.css",
+      "sha256": "b9821441d363be38eaf48d5865a3ea7f1d6d7a4f9b6a16ca28ef3477972d6366"
+    },
+    {
+      "path": "ui/account.js",
+      "sha256": "1063c647df710c4a89460dfb8ef711484cb507ef8e365a3613b6b65d4d300cc6"
+    },
+    {
+      "path": "ui/album-config.css",
+      "sha256": "5d952bbe04a0bd73cdafacfb44df608b9917d0a06670baa3bbfcd907fd59210f"
+    },
+    {
+      "path": "ui/album-config.js",
+      "sha256": "77847969692d14064eb859b5e5be090304f785ba967ceaa4b1b7af506b0f3766"
+    },
+    {
+      "path": "ui/album-motion.css",
+      "sha256": "d991200c15b69d4950efac5a5bd2bccce7c24eb145d946a981bbe96574809884"
+    },
+    {
+      "path": "ui/album-view.js",
+      "sha256": "e0ef997e2251329e65943def23fdd04e73fe30960c9a0b456e409ec13910ab4a"
+    },
+    {
+      "path": "ui/api-client.js",
+      "sha256": "4b4505633ab3a58a09da4f99ff7f24d6c7c1cad87a5b34a632b606bc61788fde"
+    },
+    {
+      "path": "ui/assets/catalogues.json",
+      "sha256": "a04c9bca45147b9bdc5f6f52b8714b0ac9f38cf70e7ce0b9711e7f2e5a9486a3"
+    },
+    {
+      "path": "ui/assets/flags/en.svg",
+      "sha256": "f30be564fc415351280981aacae0d98cd70427be70be668c1b67838e8e37f09e"
+    },
+    {
+      "path": "ui/assets/flags/es.svg",
+      "sha256": "6dfc68c687ffc577c99e97e3d52ff252c31dd6c1e7e949fe86cc3e3fc977a612"
+    },
+    {
+      "path": "ui/assets/flags/jp.svg",
+      "sha256": "3a901ee2bd9326d6b9a2bb1383884083e8270f5f43a0c6fdf37be98ff4d9d2b5"
+    },
+    {
+      "path": "ui/assets/hero-cards.json",
+      "sha256": "8bcc46b0c04043b4d936d200211fbeaeb7a4adea2d0754277a674e6da604b760"
+    },
+    {
+      "path": "ui/assets/set-covers.json",
+      "sha256": "4a370ae8637a5b5f9059c17c782b14730de26b05d5ba77cb681bb3abc878ce1a"
+    },
+    {
+      "path": "ui/assets/tcg-heroes/magic.webp",
+      "sha256": "41e67919e2e49eed2a5372369a8b0248051a6181045007a10bd58c99fe5aaa7f"
+    },
+    {
+      "path": "ui/assets/tcg-heroes/onepiece.webp",
+      "sha256": "eb52751c65b9b987802ec70cdc2f7c625b432a8b8ca59ba6e7c342526279a72c"
+    },
+    {
+      "path": "ui/assets/tcg-heroes/pokemon.webp",
+      "sha256": "b65c93615643ae0eb994bc61c81997307b095dc6efa4d6ea3665eda915897bc6"
+    },
+    {
+      "path": "ui/assets/tcg-heroes/riftbound.webp",
+      "sha256": "ea3557ea70569991f2942c9c2fa7ab39e6c7cdb14cf7b0c33d6b9e6d8608b803"
+    },
+    {
+      "path": "ui/card-inspector.css",
+      "sha256": "80a0b602c2eefa01b4ee90037d1ce1c437ce3f92f09235a8d8440639774f10ef"
+    },
+    {
+      "path": "ui/card-inspector.js",
+      "sha256": "808cb405ca996f687492957ab1d016a4656c97664f8b5636d39f65b5d1292d98"
+    },
+    {
+      "path": "ui/card-language.js",
+      "sha256": "494d6a277a02d9d85a3b112618b68cc4203ecdc8910be831ac100a922cc17c74"
+    },
+    {
+      "path": "ui/card-summary.css",
+      "sha256": "16388103181436503492d57638cf246b76b3c11f1279c6d6658c80bdca4e1ec4"
+    },
+    {
+      "path": "ui/catalogue-fields.js",
+      "sha256": "d170852c3cdbf649c2dda11b8c4cea9885ad2e78ace074c8a1c4d25abf8f60d2"
+    },
+    {
+      "path": "ui/columns.css",
+      "sha256": "5357fb0635e260ec73bcf814d6badf50e2f8fde60ea7646f929b28a263b800e2"
+    },
+    {
+      "path": "ui/columns.js",
+      "sha256": "89809576933c670714c2ed330bce7290223eceaa08a05c5777343d81c85fb424"
+    },
+    {
+      "path": "ui/core/catalogue.js",
+      "sha256": "a98b9ccd8b17c1fd9c2c2eb2941494c0e1174ca37091e2cea5bb7ffe1a58d149"
+    },
+    {
+      "path": "ui/core/collection-albums.js",
+      "sha256": "19a987e1b561a509ae1b2b1b9b0569a53986b7df526a8ebf213a6b9ed8d82246"
+    },
+    {
+      "path": "ui/core/navigation.js",
+      "sha256": "33d84d2469cd96442e04951ead5d620f5f02a10b55cf602f4963294a196901cf"
+    },
+    {
+      "path": "ui/core/scanner.js",
+      "sha256": "5479c272827d61310a41a626a8c8dcba8bda6aeb4859ca9821b6a6b2c0dfa9f5"
+    },
+    {
+      "path": "ui/core/state-account.js",
+      "sha256": "d964599713582b9ac3c497ad2f954f78a276ec2fbdc03a1160fee4eba90e87e8"
+    },
+    {
+      "path": "ui/csv.js",
+      "sha256": "450e8e3ba7e843cf935d739454b5a06f772c696dd1f7ceef4dd2536042180942"
+    },
+    {
+      "path": "ui/dashboard-extras.js",
+      "sha256": "36a9d3748a35722cff2a244ac33c71b9a24add659134c7e10774ecccf205eccc"
+    },
+    {
+      "path": "ui/focus.js",
+      "sha256": "02580500debb4eba0406ef595deaa7b2cf8e158eb642ef46fb85068b754d3b3c"
+    },
+    {
+      "path": "ui/hero-carousel.css",
+      "sha256": "6bc85704831c2a28648be1264db6ac18866de7795011483f32687f3cdcc433e8"
+    },
+    {
+      "path": "ui/hero-carousel.js",
+      "sha256": "8dd64cc668ffbdff93928389054de688283fc6d7aadda723677d6aba89aa3067"
+    },
+    {
+      "path": "ui/interface.css",
+      "sha256": "8f143e6b530ef9ed1f3c6f77be8b88f4d0ae42cae6d3738dc854c0b0ee9b45ff"
+    },
+    {
+      "path": "ui/interface.js",
+      "sha256": "6bfc2d6c788dd8feacc636492742ac04c0e9bd53aae8d2955331d4c15ac3ca49"
+    },
+    {
+      "path": "ui/inventory-client.js",
+      "sha256": "947076959598b64e7496eb75a488a2d598b5dae071dc38dbf5e6f9456b49ac09"
+    },
+    {
+      "path": "ui/legacy-foundation.css",
+      "sha256": "5b1c7a00e828adf79b2184583430b2b9c759ef9c25bdd61fb0eefecd4524c490"
+    },
+    {
+      "path": "ui/legacy-polish.css",
+      "sha256": "fc4130d5b10e14fcf71909fcffb4d3972871465dde6736321159ed0acd71f6fb"
+    },
+    {
+      "path": "ui/modern.css",
+      "sha256": "e236284508450872a8e3646bd463d0b45ce14339dfb7a77d4393d1662ebe3770"
+    },
+    {
+      "path": "ui/modern.js",
+      "sha256": "2e37543e8cc3993e58b6ff9ec1a23782d5b7849c0a68b2a943349a782a76803b"
+    },
+    {
+      "path": "ui/personal-albums.css",
+      "sha256": "52f8e5eea84a6a794019da4b70e3872aa4c9b65ecefb9bad0cefd34b55fe1f36"
+    },
+    {
+      "path": "ui/personal-albums.js",
+      "sha256": "b93ea18628cf00fe947280db3b8c9142bff584848102f9d1e285a074f1921ecd"
+    },
+    {
+      "path": "ui/platform.js",
+      "sha256": "d41bd98fab8ddae6199e029c0efa309f1c4435971d57d8516c280ab7666b1e2b"
+    },
+    {
+      "path": "ui/popup-dismiss.js",
+      "sha256": "c6c029ab1e5ab56c3e28411872722530bb1107bfc4a43d3c9620864a1789e20c"
+    },
+    {
+      "path": "ui/popup-motion.css",
+      "sha256": "5e6f05aca0b355240c13fd8235982f6507ae0d076e15a00328a63b22645af3c6"
+    },
+    {
+      "path": "ui/presentation-events.js",
+      "sha256": "7ee8b4471df10cf1f964a731b4fe7d75bd316baefde9ff598bab0163ae516746"
+    },
+    {
+      "path": "ui/prices.js",
+      "sha256": "5bd87777b7e337c002c3ab9f19f468ee41b3e2009676dabfe51bf983fdda0477"
+    },
+    {
+      "path": "ui/rarity.js",
+      "sha256": "d1804a665161a94bb0181b225a2c4c11ca43941657858e4c06d5d0442f834825"
+    },
+    {
+      "path": "ui/revamp.css",
+      "sha256": "e526d45a15b1cc58411488c0024a89fe0f4b4561f0803f18a4823d4b1cc59161"
+    },
+    {
+      "path": "ui/runtime-config.js",
+      "sha256": "507bafb3aa9515eaab754075319ad81e3302883736d022acd5c06f610a84191c"
+    },
+    {
+      "path": "ui/scanner-immersive.css",
+      "sha256": "2e86f6268932ccc4bb182b41a6293a30f1f0737f19ce87c11a23ade7d791b059"
+    },
+    {
+      "path": "ui/scanner-immersive.js",
+      "sha256": "a894bfbc7d0dc551b79486f13fe8adade12e710cc4f32e3c52744379cf81fc20"
+    },
+    {
+      "path": "ui/scanner-queue.js",
+      "sha256": "602bc4d792a393402675ad104fbe639878c8d6c1493bd2733cf49a5bdee1d2f9"
+    },
+    {
+      "path": "ui/scanner-review.js",
+      "sha256": "7aaf965a0eeb53e5765bad436eb55b08b82a67a916b54a807c2b2f166913069c"
+    },
+    {
+      "path": "ui/search-server.js",
+      "sha256": "51157fe03259b7f1e29d03f750812730fa4919321ed5cfb279ba3b8f90cfdc0b"
+    },
+    {
+      "path": "ui/users.css",
+      "sha256": "a728aaeb115da4785c65ffffb15a4014bba3281f92d9c9e7af8dad3cf0df073d"
+    },
+    {
+      "path": "ui/users.js",
+      "sha256": "a615ee3e626e3a5b554f51beb2eb6e0e206436538e7afef9015b80cac6a842ee"
+    },
+    {
+      "path": "ui/workspace.css",
+      "sha256": "445847ba7db6c82a25289ff74f14440fd3bea3d701c171a991c3ab628ef16fab"
+    },
+    {
+      "path": "ui/workspace.js",
+      "sha256": "874ed1b55c6c07fd6d01ed83d781b2b71339c92668e926940f8c67430c63c231"
+    }
+  ]
+}

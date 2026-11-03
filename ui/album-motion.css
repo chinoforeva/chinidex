@@ -1,0 +1,31 @@
+/* Keep the turning parent free of filters/opacity, which flatten its 3D faces. */
+.album-turn-sheet { -webkit-transform-style:preserve-3d; transform-style:preserve-3d; filter:none; }
+.album-turn-face { -webkit-backface-visibility:hidden; backface-visibility:hidden; background-color:#161b21; }
+.album-turn-front { transform:rotateY(0deg) translateZ(.2px); }
+.album-turn-back { transform:rotateY(180deg) translateZ(.2px); }
+.pokedex-turn-sheet .pokedex-page { min-height:0; box-sizing:border-box; }
+.pokedex-turn-sheet .pokedex-page.blank { display:grid; }
+.album-turn-sheet.is-active.turn-next { animation:chiniAlbumNext 680ms cubic-bezier(.45,0,.2,1) both; }
+.album-turn-sheet.is-active.turn-prev { animation:chiniAlbumPrev 680ms cubic-bezier(.45,0,.2,1) both; }
+@keyframes chiniAlbumNext { from { transform:rotateY(0deg); } to { transform:rotateY(-180deg); } }
+@keyframes chiniAlbumPrev { from { transform:rotateY(0deg); } to { transform:rotateY(180deg); } }
+.album-enter-next { animation:chiniAlbumEnterNext 300ms ease-out both; }
+.album-enter-prev { animation:chiniAlbumEnterPrev 300ms ease-out both; }
+@keyframes chiniAlbumEnterNext { from { opacity:.25; transform:translateX(16px); } to { opacity:1; transform:none; } }
+@keyframes chiniAlbumEnterPrev { from { opacity:.25; transform:translateX(-16px); } to { opacity:1; transform:none; } }
+@media(prefers-reduced-motion:reduce) {
+ .album-turn-sheet.is-active,.album-enter-next,.album-enter-prev { animation:none; }
+}
+
+/* Set albums: the hit area follows the card, with a uniform portrait size. */
+html body .album-slots { container-type:size;gap:10px; }
+html body .album-slots > .album-slot {
+ align-self:center;justify-self:center;position:relative;
+ width:min(100%,calc((100cqh - (var(--album-rows,3) - 1) * 10px) / var(--album-rows,3) * 5 / 7));
+ height:auto;aspect-ratio:5 / 7;max-height:100%;padding:0;
+ border:0;border-radius:5%;background:transparent;box-shadow:none;overflow:hidden;
+}
+html body .album-slots > .album-slot img { display:block;width:100%;height:100%;object-fit:cover;padding:0;margin:0; }
+html body .album-slots > .album-slot:not(button) { visibility:hidden; }
+html body .album-slots .album-slot-number { position:absolute;inset:auto 0 0;max-width:none;border:0;border-radius:0;padding:5px 4px;background:linear-gradient(transparent,#080e16ed);color:white;font-size:clamp(7px,.7vw,10px);line-height:1.3;text-align:center;white-space:normal; }
+html body .album-slots .album-missing img { opacity:.48;filter:grayscale(.5); }

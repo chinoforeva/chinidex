@@ -1,0 +1,69 @@
+.collection-album-create { display:flex;flex-wrap:wrap;gap:10px; }
+body[data-collection-mode="personal"] #m-collection-rail,body[data-collection-mode="personal"] #m-collection-filters,body[data-collection-mode="personal"] #m-album-search { display:none!important; }
+body[data-collection-mode="personal"] .m-collection-layout { grid-template-columns:1fr; }
+.personal-heading,.personal-navigation { display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:16px 0; }
+.personal-heading h2 { flex:1; }
+.personal-heading button,.personal-navigation button,.personal-slot-actions button { background:#1d2933;color:#eff5fa;border:1px solid #455361;border-radius:7px;padding:9px 13px;cursor:pointer; }
+.personal-album-list { display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px; }
+.personal-album-list button { display:grid;gap:12px;text-align:left;background:#14212b;color:#fff;padding:24px;border:1px solid #455361;border-radius:12px;cursor:pointer; }
+.personal-slots { display:grid;gap:16px;padding:18px;background:#101820;border:1px solid #43525f;border-radius:14px;max-width:min(1100px,calc(65dvh * var(--personal-columns,3) / var(--personal-rows,3) * .714 + 50px));margin:auto; }
+.personal-slot { min-width:0; }
+.personal-card,.personal-empty { width:100%;aspect-ratio:5/7;display:block;padding:0;border:1px solid #53616d;border-radius:8px;overflow:hidden;background:#1c2833;color:#c4d2df;cursor:pointer; }
+.personal-card img { width:100%;height:100%;object-fit:contain;display:block; }
+.personal-empty { display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px; }
+.personal-slot-actions { display:flex;justify-content:center;gap:5px;margin-top:7px;flex-wrap:wrap; }
+.personal-slot-actions button { font-size:12px;padding:6px; }
+.personal-picker { width:min(850px,94vw); }
+.personal-results { display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px;margin-top:16px; }
+.personal-results button { background:#17232d;color:#fff;border:1px solid #4a5966;border-radius:8px;padding:8px;cursor:pointer; }
+.personal-results img { width:100%;aspect-ratio:5/7;object-fit:contain; }
+.personal-results small { display:block;font-size:11px;color:#b9c8d5;margin-top:5px; }
+@media(max-width:600px){.personal-slots{gap:6px;padding:8px}.personal-slot-actions button{font-size:10px}.personal-empty{font-size:11px}}
+
+.personal-book .personal-slots { flex:1;min-height:0;max-width:none;width:100%;padding:0;border:0;background:transparent;gap:8px; }
+.personal-book .personal-slot { min-height:0;display:flex;flex-direction:column;gap:3px; }
+.personal-book .personal-card,.personal-book .personal-empty { flex:1;min-height:0;aspect-ratio:auto; }
+.personal-book .personal-slot-actions { margin:0;flex:none; }
+.personal-book .personal-slot-actions button { padding:3px 5px;font-size:10px; }
+.personal-book .album-spread { gap:20px!important; }
+.personal-rings { position:absolute;inset:8% auto 8% 50%;width:40px;transform:translateX(-50%);display:flex;flex-direction:column;justify-content:space-around;z-index:10;pointer-events:none; }
+.personal-rings i { display:block;height:11px;border-radius:7px;background:linear-gradient(#56616a,#e9edf0 30%,#89959e 54%,#313c44 85%);box-shadow:0 3px 5px #0009,inset 0 0 2px #fff; }
+@media(max-width:600px){.personal-book .album-spread{gap:12px!important}.personal-rings{width:26px}.personal-book .personal-slots{gap:4px}.personal-book .personal-empty{font-size:9px}.personal-book .personal-slot-actions button{font-size:8px;padding:2px}}
+
+html[data-ui="modern"] .personal-book .album-spread::after { display:none; }
+
+.personal-results button { padding:0;border:0;border-radius:5%;background:transparent;overflow:hidden;aspect-ratio:5 / 7; }
+.personal-results img { display:block;width:100%;height:100%;object-fit:cover; }
+.personal-results button:focus-visible { outline:2px solid #ff6871;outline-offset:3px; }
+.personal-book .personal-empty { font-size:clamp(20px,3vw,40px);font-weight:300; }
+
+/* Lightweight search overlay: only the input and matching cards are visible. */
+dialog.personal-picker {
+ inset:12dvh 0 auto;margin:0 auto;width:min(720px,92vw);max-height:80dvh;
+ padding:4px;border:0;border-radius:0;background:transparent;box-shadow:none;
+ overflow:auto;scrollbar-width:thin;
+}
+dialog.personal-picker::backdrop { background:#04091077;backdrop-filter:blur(2px); }
+.personal-picker form { position:sticky;top:0;z-index:2;margin:0; }
+.personal-picker input { margin:0;border:1px solid #62717e;border-radius:14px;padding:15px 18px;background:#14202bf5;box-shadow:0 8px 30px #0005;font-size:16px; }
+.personal-picker input:focus { outline:2px solid #ff6673;outline-offset:-2px; }
+.personal-picker .personal-search-status { margin:8px 4px;color:#eef4fa;text-shadow:0 1px 4px #000; }
+.personal-picker .personal-search-status:empty,.personal-picker .personal-results:empty { display:none; }
+.personal-picker .personal-results { margin:12px 0 0;gap:14px; }
+
+.personal-book .album-turn-face.album-page { position:absolute;inset:0;box-sizing:border-box;width:100%;height:100%;aspect-ratio:auto; }
+
+.personal-icon-preview { display:block;max-width:180px;max-height:80px;object-fit:contain;margin:0 auto 16px; }
+.personal-icon-preview[hidden] { display:none; }
+
+.personal-icon-selector { margin:0 0 16px;border:1px solid #52616c;border-radius:9px;background:#15212b; }
+.personal-icon-selector summary { cursor:pointer;padding:12px;color:#eef4fa; }
+.personal-icon-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-height:340px;overflow:auto;padding:12px; }
+.personal-icon-grid button { display:grid;place-items:center;min-width:0;height:86px;padding:8px;border:1px solid #354553;border-radius:8px;background:#0c151e;color:#dce8f2;cursor:pointer; }
+.personal-icon-grid button:hover,.personal-icon-grid button[aria-pressed="true"] { border-color:#ff6774;background:#26313e; }
+.personal-icon-grid img { width:100%;height:66px;object-fit:contain; }
+@media(max-width:480px){.personal-icon-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+
+.album-type-options { display:grid;gap:12px; }
+.album-type-options button { padding:20px;border:1px solid #52616c;border-radius:10px;background:#182630;color:#f0f5fa;text-align:left;font:600 16px system-ui;cursor:pointer; }
+.album-type-options button:hover { border-color:#ff6673; }

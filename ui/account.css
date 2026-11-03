@@ -1,0 +1,14 @@
+[data-account-panel] {min-width:0;}
+[data-account-panel] label {display:block;margin:16px 0 6px;color:var(--text-secondary);}
+[data-account-panel] select {display:block;width:100%;padding:12px;border:1px solid var(--border);border-radius:7px;background:var(--bg-primary);color:var(--text-primary);min-height:44px;}
+[data-account-panel] button {display:inline-flex;align-items:center;min-height:44px;padding:10px 14px;margin:6px 6px 6px 0;border:1px solid var(--border);border-radius:7px;background:var(--bg-primary);color:var(--text-primary);cursor:pointer;}
+[data-account-panel] button:hover {border-color:var(--accent);}
+[data-account-panel] :focus-visible {outline:2px solid var(--accent);outline-offset:3px;}
+[data-account-panel] [role=status] {overflow-wrap:anywhere;margin-top:12px;}
+#searchMode {min-height:44px;border:1px solid var(--border);border-radius:7px;background:var(--bg-primary);color:var(--text-primary);padding:8px;margin-bottom:8px;}
+html[data-ui=modern] button[onclick="logoutChini()"] {min-height:44px;border:1px solid var(--border);border-radius:7px;background:var(--bg-primary);color:var(--text-primary);padding:8px 12px;}
+@media(prefers-reduced-motion:reduce){.m-panel,.scanner-dialog,.card-tcg {animation:none!important;transition:none!important;}}
+.access-tools {margin-top:18px;max-height:55dvh;overflow:auto;}
+.access-tools label,[data-account-security] label {display:block;margin:10px 0;}
+.access-tools input,.access-tools select,[data-account-security] input {display:block;box-sizing:border-box;width:100%;min-height:44px;padding:10px;background:var(--bg-primary);color:var(--text-primary);border:1px solid var(--border);border-radius:6px;}
+.access-codes pre,.security-codes pre {white-space:pre-wrap;overflow-wrap:anywhere;padding:12px;border:1px solid var(--border);font-size:12px;}

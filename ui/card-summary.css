@@ -1,0 +1,12 @@
+.card-summary{display:grid;grid-template-columns:minmax(0,1fr);gap:6px;width:100%;min-width:0;text-align:left}.card-summary-title{display:flex;align-items:baseline;justify-content:space-between;gap:8px;min-width:0}.card-summary-title .card-name{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin:0;display:block}.card-summary-title .card-number{flex-shrink:0;white-space:nowrap}.card-summary-meta{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.card-summary .card-summary-price,#modalSummaryPrice{display:block;position:static;margin:0;color:var(--success,#56d6a0);font-weight:700;font-size:13px}.m-recent-row>.card-summary{flex:1;width:auto}.card-summary .rarity-chip,.card-summary .variant-chip{max-width:100%;white-space:normal}.card-summary .card-price{margin-left:0}#modalSummaryPrice{margin:8px 0 12px;text-align:center}.users-card .card-summary-title{font-size:13px}
+
+.card-language-options{display:flex;gap:8px;margin:12px 0}.card-language-options:empty{display:none}.card-language-options button{cursor:pointer;padding:7px 14px}.card-language-options button[aria-pressed="true"]{color:white;border-color:#ff4d61;background:#942e3c;opacity:1;cursor:default}
+
+.card-language-options button.card-language-flag{display:inline-flex;align-items:center;justify-content:center;padding:9px 11px;min-width:48px;min-height:40px}.card-language-flag img{display:block;width:30px;height:20px;object-fit:cover;border-radius:2px;box-shadow:0 0 0 1px #ffffff30}.card-language-flag:focus-visible{outline:2px solid #f6c86b;outline-offset:3px}
+
+/* El estado visual depende del idioma mostrado, no de la carga temporal. */
+.card-language-options button.card-language-flag{background:#11151c;border:1px solid #333946;box-shadow:none;opacity:1;transition:background .18s,border-color .18s,box-shadow .18s}
+.card-language-options button.card-language-flag img{filter:brightness(.38) saturate(.35);transition:filter .18s}
+.card-language-options button.card-language-flag[aria-pressed="true"]{background:#363023;border-color:#f6c86b;box-shadow:0 0 14px #f6c86b55;opacity:1;cursor:default}
+.card-language-options button.card-language-flag[aria-pressed="true"] img{filter:brightness(1.12) saturate(1.1)}
+.card-language-options button.card-language-flag[aria-pressed="false"]:hover{border-color:#8b92a0;background:#202630}
